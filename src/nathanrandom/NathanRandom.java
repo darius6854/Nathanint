@@ -13,15 +13,13 @@ public class NathanRandom {
         int numRandom;
         int numGuess;
         int count = 0;
-        int maxAttempts = 10; // allow 4 guesses
+        int maxAttempts = 3; // allow 3 guesses
         Random ran = new Random();
         Scanner scan = new Scanner(System.in);
 
-        numRandom = ran.nextInt(10); // random number from 0 to 4
-        // Uncomment the line below for debugging (optional)
-        // System.out.println("Secret number: " + numRandom);
+        numRandom = ran.nextInt(5); // random number from 0 to 4
 
-        System.out.println("Guess the number (between 0 and 10):");
+        System.out.println("Guess the number (between 0 and 4):");
 
         while (count < maxAttempts) {
             System.out.print("Enter your guess: ");
@@ -29,7 +27,7 @@ public class NathanRandom {
             count++;
 
             if (numGuess == numRandom) {
-                System.out.println("🎉 You win!");
+                System.out.println(" You win!");
                 return; // exit the program
             } else if (numGuess > numRandom) {
                 System.out.println("Too high! Try a smaller number.");
