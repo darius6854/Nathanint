@@ -42,6 +42,6 @@ public class NathanRandom {
             }
         }
 
-        System.out.println("😢 You lose! The correct number was: " + numRandom);
+        System.out.println(" You lose! The correct number was: " + numRandom);
     }
 }
